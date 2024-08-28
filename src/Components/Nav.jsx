@@ -4,13 +4,30 @@ import logo from "./assets/logo.png";
 function Nav() {
   return (
     <nav className="nav_container">
-      <img src={logo} alt="" />
+      <a href="/">
+        <img src={logo} alt="" />
+      </a>
       <ul className="nav_link">
-        <li>Home</li>
-        <li>Politics</li>
-        <li>Sports</li>
-        <li>Technology</li>
-        <li>Entertainment</li>
+        <li>
+          {" "}
+          <a href="/"> Home </a>
+        </li>
+        <li>
+          {" "}
+          <a href="/"> Politics </a>
+        </li>
+        <li>
+          {" "}
+          <a href="/"> Sports </a>
+        </li>
+        <li>
+          {" "}
+          <a href="/"> Technology </a>
+        </li>
+        <li>
+          {" "}
+          <a href="/"> Entertainment </a>
+        </li>
       </ul>
       <button>Search News</button>
     </nav>
