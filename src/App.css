@@ -23,6 +23,7 @@ img {
   height: 100%;
   max-width: 100px;
   max-height: 100px;
+  cursor: pointer;
 }
 
 a {
@@ -76,6 +77,7 @@ button {
   justify-content: center;
   align-items: center;
   transition: all ease 0.1s;
+  cursor: pointer;
 }
 
 button::after {
@@ -92,6 +94,7 @@ button:hover {
   z-index: 0;
   box-shadow: 40px 0 60px #008cffa3, -40px 0 60px #e100ff85;
 }
+
 
 /* Landing */
 .landing-container {
@@ -117,6 +120,7 @@ button:hover {
   max-height: 450px;
   padding: 0 24px;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .landing-title {
@@ -133,6 +137,26 @@ button:hover {
   color: white;
   text-align: left;
 }
+
+.landing-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.country-img {
+  width: 50px; 
+  height: auto;
+  margin-left: 16px;
+}
+
+.landing-header {
+  font-weight: 800;
+  font-size: 2em;
+  text-align: center;
+}
+
 
 @media (max-width: 768px) {
   .landing-title {
@@ -176,6 +200,14 @@ button:hover {
   max-height: 300px;
   padding: 0 24px;
   margin: 0 auto;
+  border-radius: 50px;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+}
+
+.landing-img_extra:hover{
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .landing-title_extra {
@@ -207,3 +239,81 @@ button:hover {
     width: calc(100% - 8px);
   }
 }
+
+/*Selected news to read section*/
+
+.para-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 48px;
+  padding: 24px;
+  background-color: #202123;
+  border-radius: 8px;
+}
+
+.news-para {
+  line-height: 1.6;
+  color: #343a40;
+}
+
+.para-container {
+  background-color: #213142;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #044b98;
+  width: 100%;
+  max-width: 950px;
+}
+
+.news-para {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #aab7c5;
+}
+
+.news-para strong {
+  color: #212529;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .para-container {
+    max-width: 90%;
+    padding: 16px;
+  }
+
+  .news-para {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .para-container {
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  .news-para {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+}
+
+.landing-img {
+  border-radius: 60px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); */
+  cursor: pointer;
+}
+
+.para-container {
+  border: 1px solid #dee2e6;
+}
+
+.landing-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+

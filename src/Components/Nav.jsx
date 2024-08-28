@@ -29,7 +29,9 @@ function Nav() {
           <a href="/"> Entertainment </a>
         </li>
       </ul>
-      <button>Search News</button>
+      <a href="/search">
+        <button>Search News</button>
+      </a>
     </nav>
   );
 }
