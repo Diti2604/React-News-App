@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import SearchingNews from "./Components/SearchingNews";
 import News from "./Components/News";
 import { useEffect, useState } from "react";
+require('dotenv').config();
 
 function App() {
   const [location, setLocation] = useState(null);
