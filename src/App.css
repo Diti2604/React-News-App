@@ -124,6 +124,7 @@ button:hover {
   padding: 0 24px;
   margin: 0 auto;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .landing-title {
@@ -302,20 +303,15 @@ button:hover {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
 
 /* Hover effect for the container */
 .landing-img_extra:hover {
   transform: scale(1.07);
-  filter: blur(5px);
 }
 
-/* Show the text on hover */
-.landing-container_extra:hover .landing-title_extra {
-  opacity: 1;
-}
 
 @media (max-width: 768px) {
   .landing-container_extra {
