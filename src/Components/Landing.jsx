@@ -1,8 +1,20 @@
 import React from "react";
 import newsImage from "./assets/logo-fb.png";
 import Extras from "./Extras";
+import Carousel from "./Carousel";
 
-function Landing({ location }) {
+function Landing({ location, news }) {
+
+  const results = news && news.results; 
+
+  const images = results && results.length > 0
+  ? results.map((item) => item.image_url) 
+  : [newsImage];
+
+  const titles = results && results.length > 0
+  ? results.map((item) => item.title)
+  : ["Title"];
+
   return (
     <div>
       <div className="landing-container">
@@ -18,10 +30,10 @@ function Landing({ location }) {
             />
           )}
         </div>
-        <img src={newsImage} alt="" className="landing-img" />
-        <h2 className="landing-title">Important news come here</h2>
-      </div>{" "}
-      <Extras />
+
+        <Carousel images={images} titles = {titles}/>
+      </div>
+      <Extras news={news} />
     </div>
   );
 }

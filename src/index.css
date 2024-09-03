@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* <div class="project__description">
+<h3 class="project__description--title">
+  Bookstore Management System
+</h3>
+<h4 class="project__description--sub-title">Java, JavaFX</h4>
+<p class="project__description--para">
+  Developed a Bookstore Management System utilizing Java and
+  JavaFX best practices.
+</p>
+<div class="project__description--links">
+  <a
+    href="https://github.com/Diti2604/bookstore-management-system"
+    target="_blank"
+    rel="noopener"
+    class="project__description--link"
+    title="m"
+    ><i class="fab fa-github"></i
+  ></a>
+  <a
+    href="https://drive.google.com/drive/folders/1joWRzcZfJqxokvoT2iicN8uYnWUrys9x?usp=drive_link"
+    title="m"
+    target="_blank"
+    rel="noopener"
+    class="project__description--link"
+    ><i class="fas fa-link"></i
+  ></a>
+</div>
+</div>
+</div>
+</li>
+<li class="project">
+<div class="project__wrapper">
+<img
+src="./assetsWebsite/goglepic.JPG"
+class="project__img"
+alt=""
+/>
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+<div class="project__wrapper--bg"></div> */

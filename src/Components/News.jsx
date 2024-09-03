@@ -1,7 +1,7 @@
 import React from "react";
 import newsImage from "./assets/logo-fb.png";
 
-function News() {
+function News({news}) {
   return (
     <div>
       <div className="landing-container">
